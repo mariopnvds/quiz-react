@@ -35,5 +35,7 @@ Correct operation of the practice with [React](https://reactjs.org) and [Redux](
 * Countdown that limits the time the user has to answer the ask questions and finish the game if time runs out.
 
 ## Demo
-![Demo](p6.gif)
+<p align="center">
+    <img src="p6.gif" alt="Demo" height="400" />
+</p>
 
