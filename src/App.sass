@@ -1,0 +1,139 @@
+$navHeight: 75px
+
+$colorPrimary: rgb(191, 213, 232)
+$colorDark: rgb(117, 137, 191)
+$colorDisabled: rgb(220, 240, 255)
+$colorBright: rgb(111, 183, 214)
+$fn: #2d4057
+$backCol: #f4f4f4
+
+body
+  width: 100%
+  height: 100%
+  background-color: $backCol
+
+#app
+  //max-width: 1080px
+
+.alert
+  display: flex
+  align-items: flex-end
+
+  .score
+    float: left
+  
+  .timer
+    float: right
+
+.dropdown-menu 
+    right: 0 !important
+    left: auto !important
+    text-align: center
+    margin-top: 8px
+
+    img
+      height: 200px
+      width: 200px
+
+
+.tips
+
+  ul
+    border-left: 2px $colorDark solid
+
+  li
+    list-style-type: none
+    margin-bottom: 2px
+    padding-top: 5px
+    padding-bottom: 5px
+
+footer
+  background-color: $fn
+  color: white
+
+  a
+    color: gray
+
+    &:hover
+      text-decoration: none
+      color: white  
+
+.game
+
+  .content
+    width: 100%
+
+    .image
+      width: auto
+      max-width: 40%
+
+      img
+        padding: 10px
+        width: 100%
+        height: 300px
+        float: left
+
+
+  .actionBar
+    width: 100%
+    float: none
+    clear: both
+    display: flex
+    flex-direction: row
+
+    .button
+      flex-grow: 1
+      background-color: $colorPrimary
+      border: none
+      padding: 10px
+      cursor: pointer
+
+      &:disabled
+        background-color: $colorDisabled
+        cursor: default
+
+        &:hover
+          background-color: $colorDisabled
+
+      &:hover
+        background-color: $colorDark
+
+      &:active
+        border-color: $colorBright
+
+.h-100
+  height: 100%
+
+.link
+  cursor: pointer
+  margin-left: 20px
+  color: rgb(125, 200, 125)!important
+
+  &:hover
+    color: $colorDark !important
+
+.loader
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 400px;
+
+.navbar
+  background-color: $fn !important
+
+  #navbar-logo
+    border-radius: 5px
+
+.spinner
+  animation: App-logo-spin infinite 2s linear
+  height: 40vmin
+
+@keyframes App-logo-spin
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
